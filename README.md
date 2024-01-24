@@ -34,10 +34,4 @@ The last part of this file is a function to make a plot for the time it takes to
 
 An example graph output:
 
-![Example timing graph]{timing_plot.png}
-
-
-
-**If there are any questions, please let me know!**
-
-
+![Example timing graph](timing_plot.png)

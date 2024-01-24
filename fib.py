@@ -1,4 +1,3 @@
-
 from functools import lru_cache
 from time import time
 from typing import Callable
@@ -13,11 +12,13 @@ def timer(func: Callable):
         t1 = time()
         result = func(*args, **kwargs)
         t2 = time()
-        runtime = t2-t1
+        runtime = t2 - t1
         print(f"Finished in {runtime}: f({args[0]}) -> {result}")
         times.append(runtime)
         return result
+
     return wrap
+
 
 def create_graph():
     numbers = [x for x in range(101)]
@@ -26,6 +27,7 @@ def create_graph():
     plt.ylabel("Time (s)")
     plt.savefig("timing_plot.png")
 
+
 @lru_cache
 @timer
 def fib(n: int) -> int:
@@ -33,10 +35,9 @@ def fib(n: int) -> int:
         return 0
     if n == 1:
         return 1
-    return fib(n-1)+fib(n-2)
+    return fib(n - 1) + fib(n - 2)
+
 
 if __name__ == "__main__":
     fib(100)
     create_graph()
-
-
