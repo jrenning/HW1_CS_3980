@@ -25,7 +25,7 @@ def create_graph():
     plt.plot(numbers, times)
     plt.xlabel("Fibonacci number")
     plt.ylabel("Time (s)")
-    plt.savefig("timing_plot.png")
+    plt.savefig("images/timing_plot.png")
 
 
 @lru_cache

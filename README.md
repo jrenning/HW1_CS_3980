@@ -8,7 +8,7 @@ This file holds a function that imitates a real world echo by printing the last 
 
 An example of the output for this is shown here:
 
-![Example echo output](echo_example.png)
+![Example echo output](images/echo_example.png)
 
 ## fib.py
 
@@ -24,7 +24,7 @@ This file also contains a timing decorator that runs the given function and prin
 
 An example output of this for the fibonacci function is shown below:
 
-![Example timing output](timing_example.png)
+![Example timing output](images/timing_example.png)
 
 *Note that these numbers might not match the numbers on the plot below due to coming from different runs of the program*
 
@@ -34,4 +34,4 @@ The last part of this file is a function to make a plot for the time it takes to
 
 An example graph output:
 
-![Example timing graph](timing_plot.png)
+![Example timing graph](images/timing_plot.png)
