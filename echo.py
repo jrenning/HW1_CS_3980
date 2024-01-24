@@ -3,7 +3,10 @@ def echo(text: str, repetitions: int = 3) -> str:
 
     echo = ""
     for rep in range(repetitions):
-        echo += text[-3 + rep :] + "\n"
+        if rep < 3:
+            echo += text[-3 + rep :] + "\n"
+        else:
+            echo += ".\n"
 
     echo += "."
 
