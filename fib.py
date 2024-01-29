@@ -1,5 +1,5 @@
 from functools import lru_cache
-from time import time
+from time import perf_counter
 from typing import Callable
 import matplotlib.pyplot as plt
 
@@ -9,9 +9,9 @@ times: [float] = []
 
 def timer(func: Callable):
     def wrap(*args, **kwargs):
-        t1 = time()
+        t1 = perf_counter()
         result = func(*args, **kwargs)
-        t2 = time()
+        t2 = perf_counter()
         runtime = t2 - t1
         print(f"Finished in {runtime}: f({args[0]}) -> {result}")
         times.append(runtime)
