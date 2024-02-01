@@ -28,6 +28,8 @@ An example output of this for the fibonacci function is shown below:
 
 *Note that these numbers might not match the numbers on the plot below due to coming from different runs of the program*
 
+This output shows that the higher the fibonacci number the longer the runtime, which is expected as more calculations are needed for the higher numbers
+
 ### Graph
 
 The last part of this file is a function to make a plot for the time it takes to run the fibonacci function at different input values using the matplotlib library.
@@ -35,3 +37,5 @@ The last part of this file is a function to make a plot for the time it takes to
 An example graph output:
 
 ![Example timing graph](images/timing_plot.png)
+
+This graph shows the expected linear relationship between the fibonacci number and the runtime.
